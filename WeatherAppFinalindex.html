@@ -12,106 +12,192 @@
       crossorigin="anonymous"
     />
   </head>
-
   <body>
     <div class="container">
       <div class="weatherApp-border">
-        <h1>What's the weather where you are?</h1>
+         <div class="row">
+          <h1>What's the weather where you are?</h1>
 
-         <form class="row" id="search-form">
-          <div class="col-5">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Enter city"
-            autofocus="on"
-            id="cityNameInput"
-          />
-          </form>
+          <form id="search-form">
+            <div class="col-4">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter city"
+                autofocus = "on"
+                id="cityNameInput"
+              />
 
-          <input
+            
+              <input
             class="btn btn-primary"
             type="submit"
             id="search-button"
             value="Enter"
           />
-
-          <input
-            class="btn btn-success"
-            id="current-location-button"
-            type="submit"
-            value="Current"
-          />
+          </form>
         </div>
 
 
-  <div class="row-1">
-    <div class="col-lg-1">
-      1 of 2
+        <div>
+          <button 
+          class="btn btn-success" 
+          id="current-location-button">
+            Current
+          </button>
+        </div>
+
+            <h2>
+            <div class="col-8" id="date">
+              Saturday, January 2 2021, 5:15pm
+            </div>
+          </form>
+          </div>
+        </h2>
+
+
+          <div class="cityName" id="nameOfCity"> 
+              <h3>  
+              Sydney
+            </h3>
+            </div>
+
+            <div class="row-3">
+              <div class = "col-4">
+               <div class = "sm-2">
+                <span class="CurrentTemperture">
+                    The current temperture is:
+                  </span>
+                    <i class="far-fa-sun"></i>
+                    <span class= "celfarNumber" id="display-Temperature">
+                      </span>
+                
+            </div>
+      </div>
     </div>
 
-    <div class="col-lg-2">
-      2 of 2
-    </div>
-  </div>
+    <ul> 
+        <li>
+            Description: <span id="description"> </span>
+          </li>
+      <li>
+        Humidity: <span id="humidity"> </span> %
+      </li>
+      <li>
+        Wind: <span id="wind"> </span> km/h
+      </li>
+    </ul>
+    
+    <span id="celfarNumber"> 17 </span>
 
-
-
-  <div class="row-2">
-
-    <div class="col-md-1">
-      1 of 3
-    </div>
-
-    <div class="col-md-2">
-      2 of 3
-    </div>
-
-    <div class="col-md-3">
-      3 of 3
-    </div>
-
-
-<div>
-    <div class="row-3">
-      <span class="weatherResultDayOne">
-      High: 32°C Low: 25°C
+    <span class="unit"> °C
       </span>
 
-<div class="col">
-  <span class="weatherResultDayTwo">
-      High: 25°C Low: 15°C
-      </span>
-</div>
+            <div class="row fiveDayOutlook">
+              <div class="col-2 Day-1">
+                Sunday
+                <br />
+                <br />
+                <span class="weatherResultDayOne">
+                  High: 18°C Low: 15°C
+                </span>
+                  <br />
+                  <span class="weatherResultEmojiDayOne">
+                    ⛅
+                  </span>
+                  <br />
+                  Humidity: 45%
+                  <br />
+                  Feels: 😃
+                </span>
+              </div>
 
 
-    <div class="col">
-      <span class="weatherResultDayThree">
-      High: 32°C Low: 25°C
-      </span>
+              <div class="col-2 Day-2">
+                Monday
+                <br />
+                <br />
+                <span class="weatherResultDayTwo">
+                  High: 25°C Low: 15°C
+                </span>
+                  <br />
+                  <span class="weatherResultEmojiDayTwo">
+                    🌞
+                  </span>
+                  <br />
+                  Humidity: 55%
+                  <br />
+                  Feels: 😃
+                </span>
+              </div>
 
 
-    <div class="col">
-      <span class="weatherResultDayTwo">
-        High: 30°C Low: 28°C
-      </span>
+              <div class="col-2 Day-3">
+                Tuesday
+                <br />
+                <br />
+                <span class="weatherResultDayThree">
+                  High: 32°C Low: 25°C
+                </span>
+                  <br />
+                  <span class="weatherResultEmojiDayThree">
+                    🌞
+                  </span>
+                  <br />
+                  Humidity: 75%
+                  <br />
+                  Feels: 🥵
+                </span>
+              </div>
 
 
-    <div class="col">
-      <span class="weatherResultDayTwo">
-        High: 20°C Low: 17°C
-      </span>
+              <div class="col-2 Day-4">
+                Wednesday
+                <br />
+                <br />
+                <span class="weatherResultDayTwo">
+                  High: 30°C Low: 28°C
+                </span>
+                  <br />
+                  <span class="weatherResultEmojiDayTwo">
+                    🌦
+                  </span>
+                  <br />
+                  Humidity: 65%
+                  <br />
+                  Feels: 🥵
+                </span>
+              </div>
 
-    </div>
-</div>
 
-    </div>
-  </div>
-</div>
+              <div class="col-2 Day-5">
+                Thursday
+                <br />
+                <br />
+                <span class="weatherResultDayTwo">
+                  High: 20°C Low: 17°C
+                </span>
+                  <br />
+                  <span class="weatherResultEmojiDayTwo">
+                    🌥
+                  </span>
+                  <br />
+                  Humidity: 45%
+                  <br />
+                  Feels: 😃
+                </span>
+              </div>
 
+            </div>
 
+            <footer>Coded by Alisha Buaya</footer>
 
-         
+              <script src="src/index.js">
+              </script>
+
+          </div>
+        </div>
+        </div>
 
 
       </div>

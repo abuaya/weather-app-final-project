@@ -18,18 +18,16 @@ h2 {
 
 .form-control {
   position: relative;
-  left: -10px;
-  top: 40px;
-  width: 70%;
 }
 .search-button {
-  max-width: 70px;
   position: relative;
-  left: px;
-  top: 40px;
+  top: 25px;
+  left: 50px;
 }
 .current-location-button {
-  max-width: 30px;
+  position: relative;
+  top: 25px;
+  left: 50px;
 }
 
 .weatherApp-border {
@@ -39,27 +37,14 @@ h2 {
   margin: 5px;
   max-width: 800px;
   max-height: 400px;
-  background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
-}
-
-.col-5 {
-  position: relative;
-  left: 25px;
-  top: 30px;
 }
 
 .btn-primary {
   position: relative;
-  left: 245px;
-  top: -38px;
-  width: 35%;
 }
 
 .btn-success {
   position: relative;
-  left: 390px;
-  top: -46px;
-  width: 15%;
 }
 
 .cityName {
@@ -88,18 +73,11 @@ h2 {
 }
 
 .celfarNumber {
-  font-size: 75px;
-  position: relative;
-  left: 290px;
-  top: -60px;
+  font-size: 50px;
 }
 
 .unit {
   font-size: 50px;
-  font-weight: 800;
-  position: relative;
-  left: 560px;
-  top: -355px;
 }
 
 ul {
