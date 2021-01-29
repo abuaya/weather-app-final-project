@@ -16,6 +16,22 @@ h2 {
   font-size: 20px;
 }
 
+.form-control {
+  position: relative;
+  left: -10px;
+  top: 40px;
+  width: 70%;
+}
+.search-button {
+  max-width: 70px;
+  position: relative;
+  left: px;
+  top: 40px;
+}
+.current-location-button {
+  max-width: 30px;
+}
+
 .weatherApp-border {
   border: 2px solid;
   border-radius: 5px;
@@ -24,13 +40,6 @@ h2 {
   max-width: 800px;
   max-height: 400px;
   background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
-}
-
-.form-control {
-  position: relative;
-  left: -10px;
-  top: 40px;
-  width: 70%;
 }
 
 .col-5 {
